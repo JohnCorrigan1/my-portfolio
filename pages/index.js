@@ -3,6 +3,8 @@ import Image from 'next/image'
 import Nala from './../public/Nala.jpeg'
 import About from './components/About'
 import Header from './components/ui/Header'
+import Projects from './components/Projects'
+
 
 
 export default function Home() {
@@ -15,8 +17,8 @@ export default function Home() {
       </Head>
       <Header />
       <About />
+    <Projects />
       <h1 className='text-2xl text-rose-600 text-center mt-10'>Coming Soon to a Web Browser near you...</h1>
-
       <Image 
       src={Nala}
       alt="My dog looking funny"
