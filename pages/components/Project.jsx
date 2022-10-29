@@ -4,18 +4,29 @@ import { useState } from 'react';
 const Project = (props) => {
     
     const [isOpen, setIsOpen] = useState(false);
+    const [isActive, setIsActive] = useState(true)
 
     const openProjectHandler = () => {
-        setIsOpen(!isOpen)
+        if(!isOpen){
+        setIsActive(true)
+        setIsOpen(true)
+        }
+        else {
+            setIsActive(false)
+            setTimeout(() => {
+                setIsOpen(false)
+            }, 2000)
+        }
     }
 
     return (
         <>
-        <div className=" z-50 flex p-10 bg-slate-200 min-w-xl max-w-xl items-center flex-col rounded-t-xl"  >
+        <div className="projectImage flex p-10 bg-slate-200 min-w-xl max-w-xl items-center flex-col rounded-t-xl"  >
             <Image className="rounded-md cursor-pointer" onClick={openProjectHandler} src="/project1.png" height={400} width={496} alt={props.title}/>
         </div>
-    {isOpen && <div className="project-info p-10 rounded-b-xl bg-slate-300 min-w-xl max-w-xl items-center -z-50">
-        <p>This is my awesome website that I built using the Nextjs React framework. It is complete frotend 
+    {isOpen && <div className={`${isActive ? 'project-in' : 'project-out'} project-info p-10 rounded-b-xl bg-slate-300 min-w-xl max-w-xl items-center`}>
+        <p>
+            This is my awesome website that I built using the Nextjs React framework. It is complete frotend 
             application using Redux to manage the global state of all the items added to cart throughout the application.
             You can add an item to your cart from any of the three shop pages and open the cart on any page.
         </p>

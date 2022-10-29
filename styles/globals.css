@@ -10,7 +10,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-.project-info {
+.project-in {
   -webkit-animation: slideIn 2s;
   -moz-animation: slideIn 2s;
   animation: slideIn 2s;
@@ -32,25 +32,31 @@ body {
 @-webkit-keyframes slideIn {
   0% {
     transform: translateY(-50%);
+    opacity: 0;
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 @-moz-keyframes slideIn {
   0% {
     transform: translateY(-300px);
+    opacity: 0;
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 @keyframes slideIn {
   0% {
     transform: translateY(-300px);
+    opacity: 0;
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -59,7 +65,7 @@ body {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(50%);
+    transform: translateY(-50%);
   }
 }
 @-moz-keyframes slideOut {
@@ -67,7 +73,7 @@ body {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(300px);
+    transform: translateY(-300px);
   }
 }
 @keyframes slideOut{
@@ -75,6 +81,14 @@ body {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(300px);
+    transform: translateY(-300px);
   }
+}
+
+.projectImage {
+  z-index: 10;
+}
+
+.project-info{
+  z-index: -10;
 }
