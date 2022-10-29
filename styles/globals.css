@@ -10,10 +10,85 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+.project-in {
+  -webkit-animation: slideIn 2s;
+  -moz-animation: slideIn 2s;
+  animation: slideIn 2s;
+}
+
+.project-out {
+  -webkit-animation: slideOut 2s;
+  -moz-animation: slideOut 2s;
+  animation: slideOut 2s;
+}
 
 @media (max-width: 800px){
   .container{
     flex-direction: column;
     width: 100vw;
   }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-moz-keyframes slideIn {
+  0% {
+    transform: translateY(-300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateY(-300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideOut {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+@-moz-keyframes slideOut {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-300px);
+  }
+}
+@keyframes slideOut{
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-300px);
+  }
+}
+
+.projectImage {
+  z-index: 10;
+}
+
+.project-info{
+  z-index: -10;
 }
