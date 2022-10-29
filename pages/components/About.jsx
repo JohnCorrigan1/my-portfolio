@@ -52,6 +52,7 @@ export default function About() {
             </a>
             <a
             href="https://bitbucket.org/jcorrigan322/"
+            rel="noreferrer"
             target="_blank"
             >
             <Image
@@ -64,6 +65,7 @@ export default function About() {
             </a>
             <a
             href="https://twitter.com/john_j_corrigan"
+            rel="noreferrer"
             target="_blank">
             <Image
               className="cursor-pointer"
