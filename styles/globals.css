@@ -11,15 +11,15 @@ body {
 }
 
 .project-in {
-  -webkit-animation: slideIn 2s;
-  -moz-animation: slideIn 2s;
-  animation: slideIn 2s;
+  -webkit-animation: slideIn 0.5s;
+  -moz-animation: slideIn 0.5s;
+  animation: slideIn 0.5s;
 }
 
 .project-out {
-  -webkit-animation: slideOut 2s;
-  -moz-animation: slideOut 2s;
-  animation: slideOut 2s;
+  -webkit-animation: slideOut 0.5s;
+  -moz-animation: slideOut 0.5s;
+  animation: slideOut 0.5s;
 }
 
 @media (max-width: 800px){
@@ -31,64 +31,64 @@ body {
 
 @-webkit-keyframes slideIn {
   0% {
-    transform: translateY(-50%);
-    opacity: 0;
+  opacity: 0;
   }
   100% {
-    transform: translateY(0);
-    opacity: 1;
+
+    opacity: .9;
   }
 }
 @-moz-keyframes slideIn {
   0% {
-    transform: translateY(-300px);
+
     opacity: 0;
   }
   100% {
-    transform: translateY(0);
-    opacity: 1;
+    
+    opacity: .9;
   }
 }
 @keyframes slideIn {
   0% {
-    transform: translateY(-300px);
     opacity: 0;
   }
   100% {
-    transform: translateY(0);
-    opacity: 1;
+    opacity: .9;
   }
 }
 
 @-webkit-keyframes slideOut {
   0% {
-    transform: translateY(0);
+    opacity: .9;
   }
   100% {
-    transform: translateY(-50%);
+    opacity: 0;
   }
 }
 @-moz-keyframes slideOut {
   0% {
-    transform: translateY(0);
+    opacity: .9;
   }
   100% {
-    transform: translateY(-300px);
+   opacity: 0;
   }
 }
 @keyframes slideOut{
   0% {
-    transform: translateY(0);
+    opacity: .9;
   }
   100% {
-    transform: translateY(-300px);
+    opacity: 0;
   }
 }
 
 .projectImage {
-  z-index: 10;
+  
 }
 
 .project-info{
-  z-index: -10;
+  position: absolute;
+  top: 5;
+  height: 400px;
+  width: 496px;
 }
