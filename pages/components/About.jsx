@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link"
 import Person from "./../../public/person.png";
 import Linkedln from "./../../public/linkedln.svg";
-import Gmail from "./../../public/gmail.svg";
+import BitBucket from "./../../public/bitbucket.png";
 import Github from "./../../public/github.svg";
 import Twitter from "./../../public/twitter.svg";
 
@@ -49,13 +50,21 @@ export default function About() {
                 alt="Github icon"
               />
             </a>
+            <a
+            href="https://bitbucket.org/jcorrigan322/"
+            target="_blank"
+            >
             <Image
               className="cursor-pointer"
-              src={Gmail}
+              src={BitBucket}
               height={40}
               width={40}
-              alt="Gmail icon"
+              alt="Bitbucket Icon"
             />
+            </a>
+            <a
+            href="https://twitter.com/john_j_corrigan"
+            target="_blank">
             <Image
               className="cursor-pointer"
               src={Twitter}
@@ -63,6 +72,7 @@ export default function About() {
               width={40}
               alt="Twitter icon"
             />
+            </a>
           </div>
         </div>
       </div>
