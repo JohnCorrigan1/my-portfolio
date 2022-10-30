@@ -19,7 +19,7 @@ const Project = (props) => {
 
   return (
     <div
-      className="projectImage flex p-10 bg-slate-200  xs:p-5 items-center flex-col rounded-xl"
+      className="projectImage flex p-10 bg-slate-200  xs:p-5 items-center flex-col rounded-xl shadow-lg drop-shadow-lg"
       onMouseLeave={openProjectHandler}
       onMouseEnter={openProjectHandler}
     >
