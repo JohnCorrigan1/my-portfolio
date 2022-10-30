@@ -91,6 +91,26 @@ body {
 .project-info{
   position: absolute;
   top: 5;
-  height: 400px;
-  width: 496px;
+  max-width: 600px;
+  min-width: 350px;
+  height:430px;
+}
+
+@media (max-width: 360px) {
+  .project-info{
+    max-height:275px;
+    font-size: smaller;
+  }
+}
+@media (max-width: 380px) {
+  .project-info{
+    max-height:295px;
+    font-size: smaller;
+  }
+}
+@media (max-width: 420px) {
+  .project-info{
+    height:320px;
+    font-size: smaller;
+  }
 }

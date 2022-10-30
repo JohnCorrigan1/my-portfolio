@@ -21,10 +21,9 @@ const Project = (props) => {
     }
 
     return (
-        <>
-        <div className="projectImage flex p-10 bg-slate-200 min-w-xl max-w-xl items-center flex-col rounded-xl" onMouseLeave={openProjectHandler} onMouseEnter={openProjectHandler}  >
+        <div className="projectImage flex p-10 bg-slate-200  xs:p-5 items-center flex-col rounded-xl" onMouseLeave={openProjectHandler} onMouseEnter={openProjectHandler}  >
             <Image className="rounded-md cursor-pointer"  src="/project1.png" height={400} width={496} alt={props.title}/>
-    {isOpen && <div className={`${isActive ? 'project-in' : 'project-out'} opacity-90 project-info p-10 bg-slate-200  min-w-xl max-w-xl items-center`}>
+    {isOpen && <div className={`${isActive ? 'project-in' : 'project-out'} opacity-90 project-info p-10 bg-slate-200 xs:p-5 items-center`}>
         <p>
             This is my awesome website that I built using the Nextjs React framework. It is complete frotend 
             application using Redux to manage the global state of all the items added to cart throughout the application.
@@ -36,7 +35,6 @@ const Project = (props) => {
         </div>
     </div>}
         </div>
-    </>
     )
 }
 
