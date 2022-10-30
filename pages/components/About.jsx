@@ -9,7 +9,7 @@ import Twitter from "./../../public/twitter.svg";
 
 export default function About() {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center mt-10">
       <div className="flex container gap-10 w-2/3 justify-center bg-slate-100 p-5 shadow-lg drop-shadow-lg">
         <Image src={Person} alt="Picture of me" />
         <div className="flex flex-col">
