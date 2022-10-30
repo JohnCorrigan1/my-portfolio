@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 
 const Project = (props) => {
@@ -26,7 +25,7 @@ const Project = (props) => {
     >
       <Image
         className="rounded-md cursor-pointer"
-        src="/project1.png"
+        src={props.image}
         height={400}
         width={496}
         alt={props.title}
@@ -37,27 +36,21 @@ const Project = (props) => {
             isActive ? "project-in" : "project-out"
           } opacity-90 project-info p-10 bg-slate-200 xs:p-5 items-center rounded-xl`}
         >
-          <p>
-            This is my awesome website that I built using the Nextjs React
-            framework. It is complete frotend application using Redux to manage
-            the global state of all the items added to cart throughout the
-            application. You can add an item to your cart from any of the three
-            shop pages and open the cart on any page.
-          </p>
+          <p>{props.description}</p>
           <div className="flex gap-10 items-center  justify-center mt-10">
-            <Link href="google.com">
+            <a href={props.live} rel="noreferrer" target="_blank">
               <button className="bg-cyan-400 p-2 pr-4 pl-4 rounded-xl hover:bg-cyan-500 active:scale-95">
                 Live Site
               </button>
-            </Link>
-            <Link href="google.com">
+            </a>
+            <a href={props.repo} rel="noreferrer" target="_blank">
               <Image
                 src="/github.svg"
                 width={40}
                 height={40}
                 className="cursor-pointer active:scale-95"
               />
-            </Link>
+            </a>
           </div>
         </div>
       )}
