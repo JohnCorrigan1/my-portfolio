@@ -5,7 +5,7 @@
 html,
 body {
   height: 100vh;
-  width: 100vw;
+  max-width: 100vw;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -24,8 +24,8 @@ body {
   animation: slideOut 0.5s;
 }
 
-@media (max-width: 800px){
-  .container{
+@media (max-width: 800px) {
+  .container {
     flex-direction: column;
     width: 100vw;
   }
@@ -33,21 +33,18 @@ body {
 
 @-webkit-keyframes slideIn {
   0% {
-  opacity: 0;
+    opacity: 0;
   }
   100% {
-
-    opacity: .9;
+    opacity: 0.9;
   }
 }
 @-moz-keyframes slideIn {
   0% {
-
     opacity: 0;
   }
   100% {
-    
-    opacity: .9;
+    opacity: 0.9;
   }
 }
 @keyframes slideIn {
@@ -55,13 +52,13 @@ body {
     opacity: 0;
   }
   100% {
-    opacity: .9;
+    opacity: 0.9;
   }
 }
 
 @-webkit-keyframes slideOut {
   0% {
-    opacity: .9;
+    opacity: 0.9;
   }
   100% {
     opacity: 0;
@@ -69,48 +66,44 @@ body {
 }
 @-moz-keyframes slideOut {
   0% {
-    opacity: .9;
+    opacity: 0.9;
   }
   100% {
-   opacity: 0;
+    opacity: 0;
   }
 }
-@keyframes slideOut{
+@keyframes slideOut {
   0% {
-    opacity: .9;
+    opacity: 0.9;
   }
   100% {
     opacity: 0;
   }
 }
 
-.projectImage {
-  
-}
-
-.project-info{
+.project-info {
   position: absolute;
   top: 5;
   max-width: 600px;
   min-width: 350px;
-  height:430px;
+  height: 430px;
 }
 
 @media (max-width: 360px) {
-  .project-info{
-    max-height:275px;
+  .project-info {
+    max-height: 275px;
     font-size: smaller;
   }
 }
 @media (max-width: 380px) {
-  .project-info{
-    max-height:295px;
+  .project-info {
+    max-height: 285px;
     font-size: smaller;
   }
 }
 @media (max-width: 420px) {
-  .project-info{
-    height:320px;
+  .project-info {
+    height: 300px;
     font-size: smaller;
   }
 }

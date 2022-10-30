@@ -1,6 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
-import Nala from "./../public/Nala.jpeg";
 import About from "./components/About";
 import Header from "./components/ui/Header";
 import Projects from "./components/Projects";
@@ -16,6 +14,7 @@ export default function Home() {
       <Header />
       <About />
       <Projects />
+      <div className="h-10" />
     </div>
   );
 }

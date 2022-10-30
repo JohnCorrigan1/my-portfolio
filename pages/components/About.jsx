@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link"
+import Link from "next/link";
 import Person from "./../../public/person.png";
 import Linkedln from "./../../public/linkedln.svg";
 import BitBucket from "./../../public/bitbucket.png";
@@ -51,29 +51,30 @@ export default function About() {
               />
             </a>
             <a
-            href="https://bitbucket.org/jcorrigan322/"
-            rel="noreferrer"
-            target="_blank"
+              href="https://bitbucket.org/jcorrigan322/"
+              rel="noreferrer"
+              target="_blank"
             >
-            <Image
-              className="cursor-pointer"
-              src={BitBucket}
-              height={40}
-              width={40}
-              alt="Bitbucket Icon"
-            />
+              <Image
+                className="cursor-pointer"
+                src={BitBucket}
+                height={40}
+                width={40}
+                alt="Bitbucket Icon"
+              />
             </a>
             <a
-            href="https://twitter.com/john_j_corrigan"
-            rel="noreferrer"
-            target="_blank">
-            <Image
-              className="cursor-pointer"
-              src={Twitter}
-              height={40}
-              width={40}
-              alt="Twitter icon"
-            />
+              href="https://twitter.com/john_j_corrigan"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <Image
+                className="cursor-pointer"
+                src={Twitter}
+                height={40}
+                width={40}
+                alt="Twitter icon"
+              />
             </a>
           </div>
         </div>

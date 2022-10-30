@@ -5,7 +5,13 @@ const Projects = () => {
     <>
       <style jsx>{`.grid-container{
       grid-template-columns: repeat(auto-fit, minmax(350px, 600px));`}</style>
-      <div className="grid-container grid justify-center mt-24 gap-10">
+      <div className=" mb-9 grid-container grid justify-center mt-24 gap-20">
+        <div>
+          <Project title="Fake Store" image="/project1.png" />
+        </div>
+        <div>
+          <Project title="Fake Store" image="/project1.png" />
+        </div>
         <div>
           <Project title="Fake Store" image="/project1.png" />
         </div>
