@@ -13,7 +13,7 @@ const Projects = () => {
             live="https://johncorrigan1.github.io/battleship/"
             repo="https://github.com/JohnCorrigan1/battleship"
             description="Classic battleship game created using Typescript HTML and CSS. This was the first project I made that 
-            involved unit testing. The goal of this project was to practice test driven  development by writing the tests first and making then writing the code to make the tests pass."
+            involved unit testing using the Javascript testing framework Jest. The goal of this project was to practice test driven  development by writing the tests first and making then writing the code to make the tests pass."
           />
         </div>
         <div>

@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Header() {
   return (
-    <div className=" max-w-full bg-rose-300 w-full p-5 flex justify-between">
-      <h1 className="sm:pl-1 sm:text-xl pl-10 text-2xl font-bold hover:underline cursor-pointer hover:-translate-y-1 duration-300">
+    <div className=" max-w-full bg-rose-300 w-full p-5 flex justify-between  shadow-lg drop-shadow-md">
+      <h1 className="sm:pl-1 sm:text-xl pl-10 text-2xl font-bold cursor-default hover:-translate-y-1 duration-300">
         John Corrigan
       </h1>
       <nav>
