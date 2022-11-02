@@ -38,14 +38,14 @@ const Project = (props) => {
         >
           <p>{props.description}</p>
           <div className="flex gap-10 items-center  justify-center mt-10">
-            <a href={props.live} rel="noreferrer" target="_blank">
+            {props.live ? <a href={props.live} rel="noreferrer" target="_blank">
               <button className="bg-cyan-400 p-2 pr-4 pl-4 rounded-xl hover:bg-cyan-500 active:scale-95">
                 Live Site
               </button>
-            </a>
+            </a> : <></>}
             <a href={props.repo} rel="noreferrer" target="_blank">
               <Image
-                src="/github.svg"
+                src={props.git}
                 width={40}
                 height={40}
                 className="cursor-pointer active:scale-95"

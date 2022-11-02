@@ -12,7 +12,7 @@ export default function Header() {
             Projects
           </li>
           <li className="text-lg hover:font-semibold hover:underline cursor-pointer hover:-translate-y-1 duration-300">
-            Contact
+            Skills
           </li>
         </ul>
       </nav>
