@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import { HashLink } from "react-router-hash-link";
 
 export default function Header() {
   return (
