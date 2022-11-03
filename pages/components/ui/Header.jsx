@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 
 export default function Header() {
   return (
@@ -8,12 +9,16 @@ export default function Header() {
       </h1>
       <nav>
         <ul className="flex gap-10 pr-10 sm:pr-1 sm:gap-3 sm:text-md">
-          <li className="text-lg hover:font-semibold hover:underline cursor-pointer hover:-translate-y-1 duration-300">
-            Projects
-          </li>
-          <li className="text-lg hover:font-semibold hover:underline cursor-pointer hover:-translate-y-1 duration-300">
-            Skills
-          </li>
+          <HashLink to="#projects" smooth>
+            <li className="text-lg hover:font-semibold hover:underline cursor-pointer hover:-translate-y-1 duration-300">
+              Projects
+            </li>
+          </HashLink>
+          <HashLink to="#skills" smooth>
+            <li className="text-lg hover:font-semibold hover:underline cursor-pointer hover:-translate-y-1 duration-300">
+              Skills
+            </li>
+          </HashLink>
         </ul>
       </nav>
     </div>

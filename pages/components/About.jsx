@@ -17,11 +17,14 @@ export default function About() {
             ever since I have been building my own computers constantly looking
             for ways technology can improve my life. 
            </p>
-           <p className="mt-5 mb-5">
+           <p className="mt-5 ">
             I'm currently focused on
             learning all things web development. I learned the fundamentals of programming in my time at Florida State University in Java, C++, Python, and SQL.
             Most of my web development knowledge is from building projects on my own and the open source course <a href="" rel="noreffer" target="_blank">The Odin Project</a>.
           </p> 
+          <p className="mt-5 mb-5">
+            Reach out to me at the links below or send me an email at jcorrigan322@gmail.com.
+          </p>
           <div className="flex gap-5 mt-auto justify-center items-center">
             <a
               href="https://www.linkedin.com/in/john-corrigan322/"
