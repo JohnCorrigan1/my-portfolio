@@ -17,7 +17,7 @@ export default function About() {
             ever since I have been building my own computers constantly looking
             for ways technology can improve my life. 
            </p>
-           <p className="mt-5 ">
+           <p className="mt-5">
             I'm currently focused on
             learning all things web development. I learned the fundamentals of programming in my time at Florida State University in Java, C++, Python, and SQL.
             Most of my web development knowledge is from building projects on my own and the open source course <a href="" rel="noreffer" target="_blank">The Odin Project</a>.
