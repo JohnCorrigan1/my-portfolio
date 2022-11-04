@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Person from "./../../public/person.png";
+import Me from "./../../public/me.jpg";
 import Linkedln from "./../../public/linkedln.svg";
 import BitBucket from "./../../public/bitbucket.png";
 import Github from "./../../public/github.svg";
@@ -10,7 +10,7 @@ export default function About() {
   return (
     <div className="flex justify-center mt-10">
       <div className="flex container gap-10 w-2/3 justify-center bg-slate-100 p-5 shadow-lg drop-shadow-lg xl:w-11/12">
-        <Image src={Person} alt="Picture of me" />
+        <Image src={Me} alt="Picture of me" />
         <div className="flex flex-col">
           <p className="mt-5">
           Hi! My love for computers began at a young age with video games and
@@ -20,7 +20,7 @@ export default function About() {
            <p className="mt-5">
             I am currently focused on
             learning all things web development. I learned the fundamentals of programming in my time at Florida State University in Java, C++, Python, and SQL.
-            Most of my web development knowledge is from building projects on my own and the open source course <a href="" rel="noreffer" target="_blank">The Odin Project</a>.
+            Most of my web development knowledge is from building projects on my own and the open source course <a className="text-blue-400 hover:text-blue-500" href="https://www.theodinproject.com" rel="noreffer" target="_blank">The Odin Project</a>.
           </p> 
           <p className="mt-5 mb-5">
             Reach out to me at the links below or send me an email at jcorrigan322@gmail.com.
