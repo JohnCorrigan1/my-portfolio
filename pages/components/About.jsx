@@ -20,7 +20,7 @@ export default function About() {
            <p className="mt-5">
             I am currently focused on
             learning all things web development. I learned the fundamentals of programming in my time at Florida State University in Java, C++, Python, and SQL.
-            Most of my web development knowledge is from building projects on my own and the open source course <a className="text-blue-400 hover:text-blue-500" href="https://www.theodinproject.com" rel="noreffer" target="_blank">The Odin Project</a>.
+            Most of my web development knowledge is from building projects on my own and the open source course <a className="text-blue-400 hover:text-blue-500" href="https://www.theodinproject.com" rel="noreferrer" target="_blank">The Odin Project</a>.
           </p> 
           <p className="mt-5 mb-5">
             Reach out to me at the links below or send me an email at jcorrigan322@gmail.com.
