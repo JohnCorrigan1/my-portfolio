@@ -4,7 +4,7 @@ const Projects = () => {
   return (
     <>
       <style jsx>{`.grid-container{
-      grid-template-columns: repeat(auto-fit, minmax(350px, 600px));`}</style>
+        grid-template-columns: repeat(auto-fit, minmax(350px, 600px));`}</style>
       <div className=" mb-9 grid-container grid justify-center mt-24 gap-20" id="projects">
         <div>
           <Project
@@ -15,6 +15,17 @@ const Projects = () => {
             repo="https://github.com/JohnCorrigan1/battleship"
             description="Classic battleship game created using Typescript HTML and CSS. This was the first project I made that 
             involved unit testing using the Javascript testing framework Jest. The goal of this project was to practice test driven  development by writing the tests first and making then writing the code to make the tests pass."
+          />
+        </div>
+        <div>
+          <Project
+          title="My Components"
+          git="/github.svg"
+          image="/myComponents.png"
+          live="https://components.johncorrigan.dev/"
+          repo="https://github.com/JohnCorrigan1/my-notes"
+          description="I am slowly creating a library of react components. These are all styled with Tailwind CSS so I can simply copy the code block and drop them into my projects. They are all created by me and a few use Next.js tools but most will work
+          out of the box in any React app. As long as Tailwind is installed that is..."
           />
         </div>
         <div>
@@ -59,16 +70,6 @@ const Projects = () => {
             repo="https://bitbucket.org/jcorrigan322/advanced-database-management-lis3781/src/master/"
             description="Bitbucket Repository for my Advanced Database Management course at Florida State Universiry. In this course I learned about different relational databases, non-relational databses, and how to set permissions
             and manage these databases so users can only access and manipulate what they need for their job. These languages include MySql, TSql (MS SQL Server), and MongoDB. The databses were given visual interfaces using MySQL Workbench and MS SQL Server. "
-          />
-        </div>
-        <div>
-          <Project
-          title="Tic Tac Toe"
-          git="/github.svg"
-          image="/tic-tac-toe.png"
-          live="https://johncorrigan1.github.io/tic-tac-toe/"
-          repo="https://github.com/JohnCorrigan1/tic-tac-toe"
-          description="Player vs Player Tic Tac Toe web app built with vanilla Javascript, HTML, and CSS. This project's goal was to use Javascript factory functions and have no global variables or functions. Check it out below."
           />
         </div>
       </div>
