@@ -1,15 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import Me from "./../../public/me.jpg";
-import Linkedln from "./../../public/linkedln.svg";
-import BitBucket from "./../../public/bitbucket.png";
-import Github from "./../../public/github.svg";
-import Twitter from "./../../public/twitter.svg";
+import Me from "../public/me.jpg";
 
 export default function About() {
   return (
     <div className="flex justify-center mt-10">
-      <div className="flex container gap-10 w-2/3 justify-center bg-slate-100 p-5 shadow-lg drop-shadow-lg xl:w-11/12">
+      <div className="flex container gap-10 w-2/3 justify-center bg-slate-100 dark:bg-dark2 p-5 shadow-lg drop-shadow-lg xl:w-11/12 dark:text-zinc-100 lg:text-xl">
         <Image src={Me} alt="Picture of me" />
         <div className="flex flex-col">
           <p className="mt-5">
@@ -33,7 +29,7 @@ export default function About() {
             >
               <Image
                 className="cursor-pointer"
-                src={Linkedln}
+                src="/linkedln.svg"
                 height={40}
                 width={40}
                 alt="Linkeldn icon"
@@ -46,7 +42,7 @@ export default function About() {
             >
               <Image
                 className="cursor-pointer"
-                src={Github}
+                src="/github.svg"
                 height={40}
                 width={40}
                 alt="Github icon"
@@ -59,7 +55,7 @@ export default function About() {
             >
               <Image
                 className="cursor-pointer"
-                src={BitBucket}
+                src="/bitbucket.png"
                 height={40}
                 width={40}
                 alt="Bitbucket Icon"
@@ -72,7 +68,7 @@ export default function About() {
             >
               <Image
                 className="cursor-pointer"
-                src={Twitter}
+                src="/twitter.svg"
                 height={40}
                 width={40}
                 alt="Twitter icon"

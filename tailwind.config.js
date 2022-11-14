@@ -5,8 +5,16 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        dark1: '#1B262C',
+        dark2: '#404B69',
+        dark3: '#00818A',
+        dark4: '#DBEDF3',
+      },
+    },
     screens: {
       '2xl': {'max': '1535px'},
       'xl': {'max': '1279px'},

@@ -6,6 +6,17 @@ const Projects = () => {
       <style jsx>{`.grid-container{
         grid-template-columns: repeat(auto-fit, minmax(350px, 600px));`}</style>
       <div className=" mb-9 grid-container grid justify-center mt-24 gap-20" id="projects">
+      <div>
+          <Project
+            title="Todo List"
+            git="/github.svg"
+            image="/todov2.png"
+            live="https://todo.johncorrigan.dev/"
+            repo="https://github.com/JohnCorrigan1/todo-v2"
+            description="A simle todo list web app created with Next.js, Typescript, Firebase, and Tailwind CSS. I built this project to practice using Next.js and Typescript. I also wanted to learn how to use Firebase for authentication and database storage."
+          />
+        </div>
+
         <div>
           <Project
             title="Battleship"
@@ -48,17 +59,6 @@ const Projects = () => {
             repo="https://github.com/JohnCorrigan1/fake-shop/"
             description="An Ecommerce store with a functioning shopping cart. The cart slides out from any page and shows all items added to cart. Has the ability to change the quantities of individual items and calculates the total cost.
             This app was built with Nextjs the React framework and redux for managing the carts state throughout the app."
-          />
-        </div>
-        <div>
-          <Project
-            title="Todo List"
-            git="/github.svg"
-            image="/todo.png"
-            live="https://johncorrigan1.github.io/to-do-list/"
-            repo="https://github.com/JohnCorrigan1/to-do-list"
-            description="A simle todo list web app created with vanilla Typescript. Has the ability to add tasks with a due date. You can organize these tasks inside different projects or simply add them to the list of all todo's.
-            The todo's are stored in browser local storage so they persist if you use the same device and browser."
           />
         </div>
         <div>

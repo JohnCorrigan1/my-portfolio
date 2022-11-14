@@ -12,6 +12,10 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+.dark{
+  background-color: #283149;
+}
+
 .project-in {
   -webkit-animation: slideIn 0.5s;
   -moz-animation: slideIn 0.5s;

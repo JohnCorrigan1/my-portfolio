@@ -19,7 +19,7 @@ const Project = (props) => {
 
   return (
     <div
-      className="projectImage flex p-10 bg-slate-200  xs:p-5 items-center flex-col rounded-xl shadow-lg drop-shadow-lg"
+      className="projectImage flex p-10 bg-slate-200  xs:p-5 items-center flex-col rounded-xl shadow-lg drop-shadow-lg dark:bg-dark4"
       onMouseLeave={openProjectHandler}
       onMouseEnter={openProjectHandler}
     >
@@ -34,7 +34,7 @@ const Project = (props) => {
         <div
           className={`${
             isActive ? "project-in" : "project-out"
-          } opacity-90 project-info p-10 bg-slate-200 xs:p-5 items-center rounded-xl`}
+          } opacity-90 project-info p-10 bg-slate-200 dark:bg-dark4 xs:p-5 items-center rounded-xl`}
         >
           <p>{props.description}</p>
           <div className="flex gap-10 items-center  justify-center mt-10">
