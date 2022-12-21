@@ -6,7 +6,7 @@ import Skills from "../components/Skills";
 
 export default function Home() {
   return (
-    <div className=" w-full">
+    <div className=" w-full home">
       <Head>
         <title>John Corrigan</title>
         <meta name="description" content="My personal portfolio website" />

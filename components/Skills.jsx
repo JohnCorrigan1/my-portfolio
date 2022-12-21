@@ -1,10 +1,28 @@
 import Image from "next/image"
+import Icon from "./Icon";
 
 const Skills = () => {
     return(
-        <div className="w-full flex items-center flex-col" id="skills">
+        <div className="w-full flex items-center flex-col gap-5" id="skills">
             <h1 className="text-2xl font-bold dark:text-zinc-100">My Toolbelt</h1>
-            <img className="w-2/3 max-w-5xl sm:w-full md:w-full lg:w-5/6 max-h-64 p-10" src="https://skillicons.dev/icons?i=js,ts,html,css,react,next,redux,tailwind,mysql,github,git,linux,mongodb,webpack&perline=7" alt="skill icons"/>
+            <div className="flex gap-3">
+            <Icon icon="js"/>
+            <Icon icon="ts"/>
+            <Icon icon="react"/>
+            <Icon icon="python"/>
+            <Icon icon="html"/>
+            <Icon icon="css"/>
+            <Icon icon="redux"/>          
+            </div>
+            <div className="flex gap-3">
+            <Icon icon="tailwind"/>
+            <Icon icon="next"/>
+            <Icon icon="mysql"/>
+            <Icon icon="github"/>
+            <Icon icon="git"/>
+            <Icon icon="mongodb"/>
+            <Icon icon="webpack"/>
+            </div>
         </div>
     )
 }
