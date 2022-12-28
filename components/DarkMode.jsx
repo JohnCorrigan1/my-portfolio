@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const DarkMode = () => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
   const colorTheme = theme === "light" ? "dark" : "light";
 
   useEffect(() => {

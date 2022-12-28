@@ -19,6 +19,17 @@ const Projects = () => {
 
         <div>
           <Project
+            title="Wheres Waldo Game"
+            git="/github.svg"
+            image="/waldo.png"
+            live="https://waldo.johncorrigan.dev/"
+            repo="https://github.com/JohnCorrigan1/wheres-waldo/"
+            description="A wheres waldo game where players choose one of three levels and have to find three different characters on each level. When a player
+            clicks on a character a small modal pops up with the characters name. I built this using Next.js and Tailwind CSS. The images are from the artist Pierre Roussel."
+          />
+        </div>
+        <div>
+          <Project
             title="Battleship"
             git="/github.svg"
             image="/battleship.png"
@@ -48,17 +59,6 @@ const Projects = () => {
             repo="https://github.com/JohnCorrigan1/memory-cards/"
             description="A memory card where players choose a mode and click on pictures they have not clicked on before. For each mode there is three levels and for each level a player must get 10 unique clicks in a row.
             Each level displays 10 images at a time from a set of 20. After each player click the 10 images are randomly chosen from the set of 20. I built this using React and a the free rick and morty api."
-          />
-        </div>
-        <div>
-          <Project
-            title="Ecommerce Store"
-            git="/github.svg"
-            image="/ecommerce.png"
-            live="https://fake-shop-kappa.vercel.app/"
-            repo="https://github.com/JohnCorrigan1/fake-shop/"
-            description="An Ecommerce store with a functioning shopping cart. The cart slides out from any page and shows all items added to cart. Has the ability to change the quantities of individual items and calculates the total cost.
-            This app was built with Nextjs the React framework and redux for managing the carts state throughout the app."
           />
         </div>
         <div>
