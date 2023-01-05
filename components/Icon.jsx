@@ -4,15 +4,16 @@ const Icon = (props) => {
 
   const cardVariants = {
     offscreen: {
-      x: 600
+      x: -200,
     },
     onscreen: {
-      y: 0,
-      rotate: -10,
+      x: 0,
+      opacity: 1,
+      rotate: -360,
       transition: {
         type: "spring",
-        bounce: 0.4,
-        duration: 0.8
+        bounce: 1,
+        duration: 2
       }
     }
   };
@@ -27,7 +28,7 @@ const Icon = (props) => {
       width={50}
       alt="skill icons"
       whileHover = {{rotate: 360}}
-      initial="offScreen"
+      initial="offscreen"
       whileInView="onscreen"
     />
   );
