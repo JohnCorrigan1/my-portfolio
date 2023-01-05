@@ -3,7 +3,7 @@ import Icon from "./Icon";
 
 const Skills = () => {
     return(
-        <div className="w-full flex items-center flex-col gap-5" id="skills">
+        <div className="w-full flex items-center flex-col gap-7" id="skills">
             <h1 className="text-2xl font-bold dark:text-zinc-100">My Toolbelt</h1>
             <div className="flex gap-3">
             <Icon icon="js"/>
