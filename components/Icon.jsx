@@ -8,12 +8,12 @@ const Icon = (props) => {
     },
     onscreen: {
       x: 0,
-      opacity: 1,
-      rotate: -360,
+      rotate: 360,
+      
       transition: {
         type: "spring",
-        bounce: 1,
-        duration: 2
+        bounce: 0.5,
+        duration: 3
       }
     }
   };
@@ -22,12 +22,12 @@ const Icon = (props) => {
     
     <motion.img
     variants={cardVariants}
-      className="w-24 duration-200 ease-in-out"
+      className="w-24"
       src={`https://skillicons.dev/icons?i=${props.icon}&perline=1`}
       height={50}
       width={50}
       alt="skill icons"
-      whileHover = {{rotate: 360}}
+      whileHover={{ scale: 1.2 }}
       initial="offscreen"
       whileInView="onscreen"
     />
