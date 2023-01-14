@@ -1,8 +1,25 @@
 import React from "react";
 import Image from "next/image";
 import Me from "../public/me.jpg";
+import { motion } from "framer-motion";
 
 export default function About() {
+
+  const cardVariants = {
+    offscreen: {
+   
+    },
+    onscreen: {
+      x: 0,
+      rotate: 360,
+      
+      transition: {
+        type: "spring",
+        bounce: 0.5,
+        duration: 3
+      }
+    }
+  };
   return (
     <div className="flex justify-center mt-10">
       <div className="flex container gap-10 w-2/3 justify-center bg-slate-100 dark:bg-dark2 p-5 shadow-lg drop-shadow-lg xl:w-11/12 dark:text-zinc-100 lg:text-xl">
@@ -27,7 +44,10 @@ export default function About() {
               rel="noreferrer"
               target="_blank"
             >
-              <Image
+              <motion.img
+              variants={cardVariants}
+              initial="offscreen"
+              whileInView="onscreen"
                 className="cursor-pointer"
                 src="/linkedln.svg"
                 height={40}
@@ -40,7 +60,10 @@ export default function About() {
               rel="noreferrer"
               target="_blank"
             >
-              <Image
+              <motion.img
+              variants={cardVariants}
+              initial="offscreen"
+              whileInView="onscreen"
                 className="cursor-pointer"
                 src="/github.svg"
                 height={40}
@@ -53,7 +76,10 @@ export default function About() {
               rel="noreferrer"
               target="_blank"
             >
-              <Image
+              <motion.img
+              variants={cardVariants}
+              initial="offscreen"
+              whileInView="onscreen"
                 className="cursor-pointer"
                 src="/bitbucket.png"
                 height={40}
@@ -66,7 +92,10 @@ export default function About() {
               rel="noreferrer"
               target="_blank"
             >
-              <Image
+              <motion.img
+              variants={cardVariants}
+              initial="offscreen"
+              whileInView="onscreen"
                 className="cursor-pointer"
                 src="/twitter.svg"
                 height={40}

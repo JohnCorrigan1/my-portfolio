@@ -13,8 +13,8 @@ const DarkMode = () => {
   }, [theme, colorTheme]);
 
   return (
-  <button  className="" onClick={() => setTheme(colorTheme)}>
-    {theme === "light" ? <Image src="/dark.svg" alt="light" width={30} height={30}/> : <Image src="/light.svg" alt="dark" width={30} height={30}/>}
+  <button  className="hover:scale-110 duration-200 active:scale-90" onClick={() => setTheme(colorTheme)}>
+    {theme === "light" ? <Image className="hover:scale-110" src="/dark.svg" alt="light" width={30} height={30}/> : <Image src="/light.svg" alt="dark" width={30} height={30}/>}
   </button>
   );
 };

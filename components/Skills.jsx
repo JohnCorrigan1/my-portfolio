@@ -1,10 +1,32 @@
 import Image from "next/image"
 import Icon from "./Icon";
+import { motion } from "framer-motion"
 
 const Skills = () => {
+    
+    const cardVariants = {
+        offscreen: {
+         opacity: 0,
+        },
+        onscreen: {
+          opacity: 1,
+          scale: 1.2,
+          transition: {
+            type: "spring",
+            bounce: 0.5,
+            duration: 5,
+           
+          }
+        }
+      };
+    
     return(
-        <div className="w-full flex items-center flex-col gap-5" id="skills">
-            <h1 className="text-2xl font-bold dark:text-zinc-100">My Toolbelt</h1>
+        <div className="w-full flex items-center flex-col gap-7" id="skills">
+            <motion.h1 className="text-3xl font-bold dark:text-zinc-100"
+            variants={cardVariants}
+            initial="offscreen"
+            whileInView="onscreen"
+            >My Toolbelt</motion.h1>
             <div className="flex gap-3">
             <Icon icon="js"/>
             <Icon icon="ts"/>
